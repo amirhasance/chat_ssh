@@ -33,9 +33,7 @@ while True:
             print(message.decode('ascii'))
         else:
             message = sys.stdin.readline()
-            message = os.popen("whoami").read() + "," + message
+            message = str(os.popen("whoami").read() + " >> " + message).replace("\n", "")
             server.send(bytes(message, 'utf-8'))
-            sys.stdout.write("<You>")
-            sys.stdout.write(message)
             sys.stdout.flush()
 server.close()

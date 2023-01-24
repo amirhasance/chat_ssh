@@ -73,16 +73,6 @@ def broadcast(message, connection):
             clients.send(bytes(message, 'utf-8'))
 
 
-"""The following function simply removes the object
-from the list that was created at the beginning of
-the program"""
-
-#
-# def remove(connection):
-#     if connection in list_of_clients:
-#         list_of_clients.remove(connection)
-
-
 while True:
     """Accepts a connection request and stores two parameters,
     conn which is a socket object for that user, and addr
