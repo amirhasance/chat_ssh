@@ -3,7 +3,7 @@ import os
 import socket
 import select
 import sys
-
+from colored import fg
 '''Replace "thread" with "_thread" for python 3'''
 from _thread import *
 
@@ -26,12 +26,15 @@ IP_address = str(sys.argv[1])
 # takes second argument from command prompt as port number
 Port = int(sys.argv[2])
 
+
 """
 binds the server to an entered IP address and at the
 specified port number.
 The client must be aware of these parameters
 """
 server.bind((IP_address, Port))
+
+print(fg("red") + f"Chat Server Running at Port {Port}")
 
 """
 listens for 100 active connections. This number can be
