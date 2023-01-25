@@ -32,4 +32,15 @@ python3 chatClient.py 127.0.0.1 9000
 ```
 
 here , there are some screenshots of running a demo 
+<h4>running server </h4>
+<img src="https://github.com/amirhasance/chat_ssh/raw/main/img/runningServer.png" >
 
+<h4>client_1 'amir' ssh to server </h4>
+<img src="https://github.com/amirhasance/chat_ssh/raw/main/img/client_1_Amir.png" >
+
+
+<h4>two clients are chatting </h4>
+<img src="https://github.com/amirhasance/chat_ssh/raw/main/img/Screenshot%202023-01-25%20at%2021.52.47.png">
+
+<h4>chat server is rendering the room</h4>
+<img src="https://github.com/amirhasance/chat_ssh/raw/main/img/server_rendering_chats.png">
